@@ -1,0 +1,56 @@
+.teamwork{
+  padding-bottom: 290px;
+  background-image: url("../../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 770px) calc(50% + 230px);
+  }
+
+  .teamwork__info{
+  width: 500px;
+  position: relative;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 587px;
+      height: 587px;
+      background-image: url("../../images/team.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -70px;
+      left: 590px;
+    }
+  }
+
+
+  .teamwork__heading{
+    display: block;
+    font-family: "Circular Std";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  color: $pink-color;
+  }
+
+  .teamwork__title{
+    font-family: "Circular Std";
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    margin: 0;
+    color: $title-color;
+  }
+
+  .teamwork__text{
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-color;
+    margin: 0;
+    margin: 24px 0 40px;
+  }
+
+  .teamwork__link{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
