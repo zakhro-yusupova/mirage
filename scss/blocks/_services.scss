@@ -40,6 +40,7 @@
   border-radius: 8px;
   padding: 150px 23px 23px 23px;
 
+
   &:nth-child(1){
     position: relative;
 
@@ -73,7 +74,6 @@
   }
 
   &:nth-child(3){
-    background-color: $pink-color;
     position: relative;
 
     &::before{
@@ -110,6 +110,10 @@
   margin-left: 30px;
 }
 
+.services__item-mlink{
+  text-decoration: none;
+}
+
 .services__subtitle{
   font-family: "Circular Std";
   font-style: normal;
@@ -125,41 +129,4 @@
   color: $text-color;
   margin: 0;
   margin-bottom: 16px;
-}
-
-.b-heading{
-  color: $white-color;
-}
-
-.b-subtext{
-  color: $white-color;
-}
-
-.b-sublink{
-  font-family: "Circular Std";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: $white-color;
-  text-decoration: none;
-  position: relative;
-  transition: 0.5s ease;
-
-  &:hover{
-    color: $title-color;
-  }
-
-  &::after{
-    content: "";
-    display: block;
-    background-image: url("../../images/learn-more.png");
-    background-repeat: no-repeat;
-    width: 7px;
-    height: 13px;
-    position: absolute;
-    top: 3px;
-    right: -17px;
-
-
-  }
 }

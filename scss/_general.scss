@@ -12,9 +12,11 @@ html {
 
 
 body {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 400;
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 400;
+	overflow-x: hidden;
+	position: relative;
 	background-color: #FCFCFC;
 	margin: 0;
 	padding: 0;

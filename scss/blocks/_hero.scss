@@ -1,0 +1,86 @@
+.hero__inner{
+  display: flex;
+  align-items: center;
+}
+
+.hero__info{
+  width: 600px;
+}
+
+.hero__strong{
+  display: block;
+  font-family: "Circular Std";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: $pink-color;
+  position: relative;
+  padding-left: 47px;
+  margin-bottom: 30px;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    background-color: $pink-color;
+    top: 20px;
+    left: 5px;
+  }
+}
+
+.hero__title{
+  font-family: "Circular Std";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+  margin: 0;
+  color: $title-color;
+}
+
+.hero__text{
+  width: 531px;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin:31px 0 42px;
+  color: $text-color;
+}
+
+.link{
+  display: inline-block;
+  font-family: "Circular Std";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: $pink-color;
+  color: $white-color;
+  padding: 18px 85px 18px 22px;
+  position: relative;
+  transition: 1s ease;
+
+  &::after{
+    content: "";
+    display: block;
+    width:44px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../../images/start-arrow.png");
+    background-repeat: no-repeat;
+    top: 17px;
+    right: 20px;
+  }
+
+  &:hover{
+    border: 2px solid $title-color;
+    background-color: $pink-color;
+  color: $title-color;
+  }
+}
