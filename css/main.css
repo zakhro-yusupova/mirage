@@ -672,9 +672,9 @@ img {
   content: "";
   display: block;
   position: absolute;
-  width: 48px;
-  height: 48px;
-  background-image: url("../../images/portfolio.png");
+  width: 44px;
+  height: 44px;
+  background-image: url("../../images/illustration.png");
   background-repeat: no-repeat;
   top: 57px;
   right: 111px;
@@ -719,6 +719,57 @@ img {
   color: #919299;
   margin: 0;
   margin-bottom: 16px;
+}
+
+.services__sublink {
+  text-decoration: none;
+  color: transparent;
+}
+
+.services__item {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.services__item:hover {
+  background-color: #F78CB6;
+}
+
+.services__item:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/portfolio.png");
+  background-repeat: no-repeat;
+  top: 57px;
+  right: 111px;
+}
+
+.services__item:hover > .services__subtitle {
+  color: #FFFFFF;
+}
+
+.services__item:hover > .services__text {
+  color: #FFFFFF;
+}
+
+.services__item:hover > .services__sublink {
+  color: #FFFFFF;
+  position: relative;
+}
+
+.services__item:hover > .services__sublink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 13px;
+  background-image: url("../../images/learn-more.png");
+  background-repeat: no-repeat;
+  top: 3px;
+  right: -17px;
 }
 
 .design-things {

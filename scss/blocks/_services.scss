@@ -73,6 +73,7 @@
     }
   }
 
+
   &:nth-child(3){
     position: relative;
 
@@ -80,9 +81,9 @@
       content: "";
       display: block;
       position: absolute;
-      width: 48px;
-      height: 48px;
-      background-image: url("../../images/portfolio.png");
+      width: 44px;
+      height: 44px;
+      background-image: url("../../images/illustration.png");
       background-repeat: no-repeat;
       top: 57px;
       right: 111px;
@@ -129,4 +130,54 @@
   color: $text-color;
   margin: 0;
   margin-bottom: 16px;
+}
+
+.services__sublink{
+  text-decoration: none;
+  color: transparent;
+}
+
+.services__item{
+transition: all 1s ease;
+
+&:hover{
+background-color: $pink-color;
+
+&::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/portfolio.png");
+  background-repeat: no-repeat;
+  top: 57px;
+  right: 111px;
+}
+
+> .services__subtitle{
+  color: $white-color;
+}
+
+> .services__text{
+  color: $white-color;
+}
+
+  > .services__sublink{
+    color: $white-color;
+    position: relative;
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 13px;
+      background-image: url("../../images/learn-more.png");
+      background-repeat: no-repeat;
+      top: 3px;
+      right: -17px;
+    }
+  }
+}
 }
