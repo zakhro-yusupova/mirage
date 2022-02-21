@@ -3,7 +3,7 @@
   background-image: url("../../images/footer-bg.png");
   background-repeat: no-repeat;
   background-position: calc(50%) calc(50% + 60px);
-  background-size: 100%;
+  background-size: contain;
 }
 
 .site-footer__inner{
@@ -109,6 +109,8 @@
   line-height: 30px;
   letter-spacing: 0.02em;
   color: $white-color;
+  background-color: transparent;
+  border: transparent;
   transition: 1s ease;
   position: relative;
 
@@ -133,7 +135,7 @@
     background-image: url("../../images/Down-Arrow.png");
     background-repeat: no-repeat;
     top: 12px;
-    right: -20px;
+    right: -10px;
   }
 
   &:hover{

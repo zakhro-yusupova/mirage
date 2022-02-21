@@ -39,9 +39,9 @@
   background-color:$light-pink-color;
   border-radius: 8px;
   padding: 150px 23px 23px 23px;
+}
 
-
-  &:nth-child(1){
+.services__item-mlink{
     position: relative;
 
     &::before{
@@ -52,60 +52,10 @@
       height: 50px;
       background-image: url("../../images/design.png");
       background-repeat: no-repeat;
-      top: 57px;
-      right: 111px;
+      top: -90px;
+      left: -25px;
     }
   }
-
-  &:nth-child(2){
-    position: relative;
-
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 43px;
-      height: 43px;
-      background-image: url("../../images/development.png");
-      background-repeat: no-repeat;
-      top: 57px;
-      right: 111px;
-    }
-  }
-
-
-  &:nth-child(3){
-    position: relative;
-
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      background-image: url("../../images/illustration.png");
-      background-repeat: no-repeat;
-      top: 57px;
-      right: 111px;
-    }
-  }
-
-  &:nth-child(4){
-    position: relative;
-
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      background-image: url("../../images/illustration.png");
-      background-repeat: no-repeat;
-      top: 57px;
-      right: 111px;
-    }
-  }
-}
 
 .services__item + .services__item{
   margin-left: 30px;
@@ -113,6 +63,7 @@
 
 .services__item-mlink{
   text-decoration: none;
+  color: transparent;
 }
 
 .services__subtitle{
@@ -138,10 +89,15 @@
 }
 
 .services__item{
-transition: all 1s ease;
+transition: all 1.5s ease;
 
 &:hover{
 background-color: $pink-color;
+opacity: 0.8;
+
+.services__item-mlink{
+  color: $white-color;
+position: relative;
 
 &::before{
   content: "";
@@ -151,33 +107,31 @@ background-color: $pink-color;
   height: 48px;
   background-image: url("../../images/portfolio.png");
   background-repeat: no-repeat;
-  top: 57px;
-  right: 111px;
+  top: -90px;
+  left: -25px;
+
+
 }
 
-> .services__subtitle{
+&::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 13px;
+  background-image: url("../../images/learn-more.png");
+  background-repeat: no-repeat;
+  top: 138px;
+  right: -17px;
+}
+}
+ .services__subtitle{
   color: $white-color;
 }
 
-> .services__text{
+ .services__text{
   color: $white-color;
 }
 
-  > .services__sublink{
-    color: $white-color;
-    position: relative;
-
-    &::after{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 7px;
-      height: 13px;
-      background-image: url("../../images/learn-more.png");
-      background-repeat: no-repeat;
-      top: 3px;
-      right: -17px;
-    }
-  }
 }
 }

@@ -40,13 +40,13 @@
 }
 
 .hero__text{
-  width: 531px;
   font-family: "Proxima Nova";
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.02em;
   margin: 0;
   margin:31px 0 42px;
+  padding-right: 90px;
   color: $text-color;
 }
 
@@ -57,7 +57,6 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  border: 2px solid transparent;
   border-radius: 4px;
   text-decoration: none;
   background-color: $pink-color;
@@ -79,8 +78,6 @@
   }
 
   &:hover{
-    border: 2px solid $title-color;
-    background-color: $pink-color;
-  color: $title-color;
+ opacity: 0.8;
   }
 }

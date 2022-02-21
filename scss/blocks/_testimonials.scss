@@ -1,7 +1,7 @@
 .testimonials__inner{
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
-  padding-bottom: 165px;
+  padding-bottom: 185px;
 }
 
 .testimonials__info{
@@ -30,12 +30,11 @@
 }
 
 .testimonials__quote{
-  width: 400px;
   font-size: 20px;
   line-height: 32px;
   color: $text-color;
   margin: 0;
-  margin: 38px 0 30px;
+  margin: 38px 100px 30px 0;
 }
 
 .testimonials__name{
@@ -47,7 +46,63 @@
   margin-bottom: 10px;
 }
 
-.testimonials__country{
+.testimonials__country-link{
+  font-style: normal;
   line-height: 32px;
   color: $text-color;
+  text-decoration: none;
+}
+
+.testimonials__brands-link{
+  text-decoration: none;
+}
+
+
+.slick-prev{
+  position: absolute;
+  bottom: 200px;
+  right:  35px;
+  z-index: 100;
+  &::before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background-image: url("../../images/bi_arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+  }
+}
+
+.slick-next{
+  width: 30px;
+  position: absolute;
+  bottom: 200px;
+  right:  0;
+  z-index: 100;
+  &::before{
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background-image: url("../../images/bi_arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+  }
+}
+
+
+.brands-carousel{
+  display: flex;
+  align-items: center !important;
+
+.slick-next, .slick-prev{
+    visibility: hidden;
+   }
+}
+
+.testimonials__brands-link + .testimonials__brands-link{
+  margin-left: 80px;
 }
